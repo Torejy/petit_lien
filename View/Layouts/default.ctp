@@ -1,62 +1,70 @@
-<?php
-/**
- *
- * PHP 5
- *
- * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
- * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
- *
- * Licensed under The MIT License
- * For full copyright and license information, please see the LICENSE.txt
- * Redistributions of files must retain the above copyright notice.
- *
- * @copyright     Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
- * @link          http://cakephp.org CakePHP(tm) Project
- * @package       app.View.Layouts
- * @since         CakePHP(tm) v 0.10.0.1076
- * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
- */
-
-$cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework');
-?>
 <!DOCTYPE html>
 <html>
 <head>
 	<?php echo $this->Html->charset(); ?>
 	<title>
-		<?php echo $cakeDescription ?>:
 		<?php echo $title_for_layout; ?>
 	</title>
+	<meta name="viewport" content="width=device-width" />
 	<?php
 		echo $this->Html->meta('icon');
 
-		echo $this->Html->css('cake.generic');
+		echo $this->Html->css(array('normalize', 'foundation'));
+		echo $this->Html->script(array('vendor/custom.modernizr.js'));
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
 	?>
+	<!--[if IE 8]>    <html class="no-js lt-ie9" lang="fr"> <![endif]-->
+	<!--[if gt IE 8]><!--> <html class="no-js" lang="fr"> <!--<![endif]-->
 </head>
 <body>
-	<div id="container">
-		<div id="header">
-			<h1><?php echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1>
-		</div>
-		<div id="content">
 
-			<?php echo $this->Session->flash(); ?>
+  <div class="row">
+    <div class="large-12 columns">
+ 
+        <ul class="button-group">
+          <li><a href="#" class="button">Nav Item 1</a></li>
+          <li><a href="#" class="button">Nav Item 2</a></li>
+          <li><a href="#" class="button">Nav Item 3</a></li>
+        </ul>
+ 
+        <div class="row">
+ 				<?php echo $this->Session->flash(); ?>
 
-			<?php echo $this->fetch('content'); ?>
-		</div>
-		<div id="footer">
-			<?php echo $this->Html->link(
-					$this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),
-					'http://www.cakephp.org/',
-					array('target' => '_blank', 'escape' => false)
-				);
-			?>
-		</div>
-	</div>
-	<?php echo $this->element('sql_dump'); ?>
+				<?php echo $this->fetch('content'); ?>
+          
+        </div>
+ 
+        <footer class="row">
+        <div class="large-12 columns"><hr />
+            <div class="row">
+				<?php echo $this->element('sql_dump'); ?>
+            </div>
+        </div>
+      </footer>
+ 
+      <!-- End Footer -->
+ 
+ 
+    </div>
+  </div>
+  <script>
+  document.write('<script src=js/vendor/' +
+  ('__proto__' in {} ? 'zepto' : 'jquery') +
+  '.js><\/script>')
+  </script>
+  <script src="js/foundation.min.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+  <script type="text/javascript">
+    $(window).load(function() {
+      $('#featured').orbit({ fluid: '2x1' });
+    });
+  </script>
+  <!-- End Footer -->
+
 </body>
 </html>
