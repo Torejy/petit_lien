@@ -22,25 +22,20 @@
 <body>
 
   <div class="row">
-    <div class="large-12 columns">
- 
-        <ul class="button-group">
-          <li><a href="#" class="button">Nav Item 1</a></li>
-          <li><a href="#" class="button">Nav Item 2</a></li>
-          <li><a href="#" class="button">Nav Item 3</a></li>
-        </ul>
+
  
         <div class="row">
- 				<?php echo $this->Session->flash(); ?>
+              <h2> Petit-Lien : un raccourcisseur d'URL pas si petit que cela. </h2> 
+ 				     <?php echo $this->Session->flash(); ?>
 
-				<?php echo $this->fetch('content'); ?>
+				      <?php echo $this->fetch('content'); ?>
           
         </div>
  
         <footer class="row">
         <div class="large-12 columns"><hr />
             <div class="row">
-				<?php echo $this->element('sql_dump'); ?>
+				      <?php echo $this->element('sql_dump'); ?>
             </div>
         </div>
       </footer>

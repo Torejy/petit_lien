@@ -25,3 +25,58 @@ Request URL: /petit_lien/css/vendor/custom.modernizr.js.css
 Stack Trace:
 #0 /Users/denisguioth/Sites/petit_lien/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2013-03-31 18:59:58 Error: [MissingViewException] View file "/Users/denisguioth/Sites/petit_lien/app/View/Links/add.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/denisguioth/Sites/petit_lien/app/View/Links/add.ctp',
+)
+Request URL: /petit_lien/
+Stack Trace:
+#0 /Users/denisguioth/Sites/petit_lien/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Users/denisguioth/Sites/petit_lien/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Users/denisguioth/Sites/petit_lien/app/Controller/LinksController.php(7): Controller->render()
+#3 [internal function]: LinksController->add('home')
+#4 /Users/denisguioth/Sites/petit_lien/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(LinksController), Array)
+#5 /Users/denisguioth/Sites/petit_lien/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 /Users/denisguioth/Sites/petit_lien/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(LinksController), Object(CakeRequest), Object(CakeResponse))
+#7 /Users/denisguioth/Sites/petit_lien/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-03-31 19:09:27 Error: Fatal Error (4): syntax error, unexpected '"large-2 small-3 columns"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [/Users/denisguioth/Sites/petit_lien/app/View/Links/add.ctp, line 10]
+2013-03-31 19:09:27 Error: [FatalErrorException] syntax error, unexpected '"large-2 small-3 columns"' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /petit_lien/
+Stack Trace:
+#0 /Users/denisguioth/Sites/petit_lien/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/denisgui...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/denisgui...', 10, Array)
+#2 /Users/denisguioth/Sites/petit_lien/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/denisgui...', 10, Array)
+#3 /Users/denisguioth/Sites/petit_lien/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-31 19:09:36 Error: Fatal Error (4): syntax error, unexpected ';' in [/Users/denisguioth/Sites/petit_lien/app/View/Links/add.ctp, line 10]
+2013-03-31 19:09:36 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /petit_lien/
+Stack Trace:
+#0 /Users/denisguioth/Sites/petit_lien/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/denisgui...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/denisgui...', 10, Array)
+#2 /Users/denisguioth/Sites/petit_lien/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/denisgui...', 10, Array)
+#3 /Users/denisguioth/Sites/petit_lien/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-31 19:12:28 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [/Users/denisguioth/Sites/petit_lien/app/View/Links/add.ctp, line 10]
+2013-03-31 19:12:28 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /petit_lien/
+Stack Trace:
+#0 /Users/denisguioth/Sites/petit_lien/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/denisgui...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/denisgui...', 10, Array)
+#2 /Users/denisguioth/Sites/petit_lien/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/denisgui...', 10, Array)
+#3 /Users/denisguioth/Sites/petit_lien/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-31 19:13:41 Error: Fatal Error (4): syntax error, unexpected ';' in [/Users/denisguioth/Sites/petit_lien/app/View/Links/add.ctp, line 10]
+2013-03-31 19:13:41 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /petit_lien/
+Stack Trace:
+#0 /Users/denisguioth/Sites/petit_lien/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/denisgui...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/denisgui...', 10, Array)
+#2 /Users/denisguioth/Sites/petit_lien/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/denisgui...', 10, Array)
+#3 /Users/denisguioth/Sites/petit_lien/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
